@@ -163,7 +163,6 @@
 
 .post_text-content {
   display: block;
-
   font-family: var(--font-inter-variable), sans-serif;
   font-size: 18px;
   font-variation-settings: "wght" var(--post-text-font-weight);
@@ -176,7 +175,6 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-
   padding: 27px 25px 0 25px;
   border-top: 2px solid var(--accent-color);
 }
@@ -469,10 +467,6 @@
   height: 39px;
 }
 
-.save__icon {
-  display: inline-block;
-}
-
 .button__contanier {
   margin-top: 30px;
   display: flex;
@@ -537,19 +531,16 @@ dialog::backdrop {
   }
   .post_paragraph {
     min-height: 33px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
   }
 
   .post__save-button-detail {
     height: 84px;
     flex-direction: column;
     width: 306px;
-  }
-
-  .post_paragraph {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 3.5px;
-    padding-bottom: 3.5px;
   }
 
   .floppy {
