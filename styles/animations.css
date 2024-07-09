@@ -50,7 +50,7 @@
 
 .like-icon.is-liked .heart {
   animation: heart_scale 0.3s ease-in;
-  animation-delay: 0.1s;  
+  animation-delay: 0.1s;
   animation-fill-mode: alternate;
   transform-origin: center center;
 }
@@ -60,32 +60,31 @@
 }
 
 @keyframes arrow {
-    from {
-      transform: translateX(0);
-    }
-  
-    to {
-      transform: translateX(4px);
-    }
+  from {
+    transform: translateX(0);
   }
 
+  to {
+    transform: translateX(4px);
+  }
+}
 
-  @keyframes heart_scale {
-    from {
-      transform: scale(1);
-    }
-  
-    to {
-      transform: scale(1.5);
-    }
+@keyframes heart_scale {
+  from {
+    transform: scale(1);
   }
 
-  @keyframes heart_sparks {
-    from {
-      fill: var(--sparks-color);
-    }
-  
-    to {
-      fill: var(--heart-body-color);
-    }
+  to {
+    transform: scale(1.5);
   }
+}
+
+@keyframes heart_sparks {
+  from {
+    fill: var(--sparks-color);
+  }
+
+  to {
+    fill: var(--heart-body-color);
+  }
+}
