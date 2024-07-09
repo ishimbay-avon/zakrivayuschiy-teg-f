@@ -6,40 +6,75 @@
 */
 
 :root.theme-dark {
-    --background-color:#000;
-    --accent-color:#00CC14;
-    --post-text-font-weight:465;
-    --post-title-font-weight:785;
-    --background-image: #000;
-    --contour-color:#00CC14;
-    --accent-color-for-button:#00CC14;
-    --gradient-fon-color-begin:#007f0c;
-    --gradient-fon-color-end:#004306;
-  }
+  --background-color: #000;
+  --accent-color: #00cc14;
+  --post-text-font-weight: 465;
+  --post-title-font-weight: 785;
+  --contour-color: #00cc14;
+  --accent-color-for-button: #00cc14;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #000 0px,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #000 0px,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#007f0c 0.01%, #004306 100%);
+}
 
 :root.theme-light {
-    --background-color:#fff;
-    --accent-color:#000;
-    --contour-color:#000;
-    --post-text-font-weight:400;
-    --post-title-font-weight:700;
-    --background-image: #d3d3d3;
-    --accent-color-for-button:#fff;
+  --background-color: #fff;
+  --accent-color: #000;
+  --contour-color: #000;
+  --post-text-font-weight: 400;
+  --post-title-font-weight: 700;
+  --accent-color-for-button: #fff;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+}
 
-    --gradient-fon-color-begin:#e7e7e7;
-    --gradient-fon-color-end:#1a1a1a;
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #fff;
+    --accent-color: #000;
+    --contour-color: #000;
+    --post-text-font-weight: 400;
+    --post-title-font-weight: 700;
+    --accent-color-for-button: #fff;
+    --background-image: repeating-linear-gradient(
+        90deg,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
   }
-
-  @media (prefers-color-scheme: light) {
-    :root {
-        --background-color:#fff;
-        --accent-color:#000;
-        --contour-color:#000;
-        --post-text-font-weight:400;
-        --post-title-font-weight:700;
-        --background-image: #d3d3d3;
-        --accent-color-for-button:#fff;
-        --gradient-fon-color-begin:#e7e7e7;
-        --gradient-fon-color-end:#1a1a1a;
-    }
-  }
+}

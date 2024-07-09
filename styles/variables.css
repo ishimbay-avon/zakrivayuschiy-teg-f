@@ -1,23 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --font-inter-variable:'Inter Variable';
-    --font-press-start-2p:'Press Start 2P';
-    --post-text-font-weight:400;
-    --post-title-font-weight:700;
+  --font-inter-variable: "Inter Variable";
+  --font-press-start-2p: "Press Start 2P";
+  --post-text-font-weight: 400;
+  --post-title-font-weight: 700;
 
-    --background-color:#fff;
-    --accent-color:#000;
+  --background-color: #fff;
+  --accent-color: #000;
 
-    --accent-color-for-button:#fff;
+  --accent-color-for-button: #fff;
 
-    --contour-color:#000;
-    --sparks-color:transparent;
-    --heart-body-color:#ff0000;
-
-    --background-image: #d3d3d3;
-
-    --gradient-fon-color-begin:#e7e7e7;
-    --gradient-fon-color-end:#1a1a1a;
-
-    /*url("../images/background light.png");*/
-  }
+  --contour-color: #000;
+  --sparks-color: transparent;
+  --heart-body-color: #ff0000;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+}
