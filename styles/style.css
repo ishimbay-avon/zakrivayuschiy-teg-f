@@ -268,20 +268,20 @@
   transition: border-color 0.3s ease;
 }
 
-.button:focus{
+.button:focus {
   outline: none;
 }
 
-.button:focus-visible{
+.button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--accent-color);
   transition: box-shadow 300ms ease;
 }
 
-.button:hover::before{
+.button:hover::before {
   transform: scaleX(1);
 }
 
-.button::before{
+.button::before {
   content: "";
   position: absolute;
   display: block;
@@ -322,7 +322,7 @@
 
 .close-button {
   width: 100%;
-  height: 38px;  
+  height: 38px;
   text-transform: uppercase;
 }
 
